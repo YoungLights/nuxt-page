@@ -1,4 +1,7 @@
 <template>
+	<Head>
+		Nuxt Website
+	</Head>
 	<nav>
 		<NuxtLink to="/">Index</NuxtLink>
 		<NuxtLink to="/about">About</NuxtLink>

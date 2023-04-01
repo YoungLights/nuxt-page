@@ -1,6 +1,6 @@
 <template>
 	<Head>
-		Nuxt Website
+		<Title>Nuxt Website</Title>
 	</Head>
 	<nav>
 		<NuxtLink to="/">Index</NuxtLink>

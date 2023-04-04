@@ -1,0 +1,40 @@
+.product-list
+	display: grid
+	gap: 20px
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+
+.product
+	border: solid 1px black
+	border-radius: 20px
+	overflow: hidden
+
+.product-title
+	padding: 20px
+
+	h4
+		color: black
+
+.product-img
+	background: black
+	position: relative
+	aspect-ratio: 16 / 9
+
+	p
+		position: absolute
+		font-size: 1.5rem
+		color: white
+		background: #0cb797
+		font-weight: bold
+		padding: 10px 30px
+		top: 20px
+		right: 0px
+		z-index: 1
+
+	img
+		width: 100%
+		height: 100%
+		position: absolute
+		inset: 0
+		object-fit: cover
+		object-position: center center
+		opacity: 0.6

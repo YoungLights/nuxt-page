@@ -7,7 +7,7 @@
 			<NuxtLink to="/">Index</NuxtLink>
 			<NuxtLink to="/about">About</NuxtLink>
 			<NuxtLink to="/services">Services</NuxtLink>
-			<NuxtLink to="/pokedex">Pokedex</NuxtLink>
+			<NuxtLink to="/products">Products</NuxtLink>
 		</div>
 	</nav>
 </template>

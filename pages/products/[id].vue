@@ -1,3 +1,3 @@
 <template>
-	<h1>Pokedex</h1>
+	<h1>Details</h1>
 </template>

@@ -7,7 +7,7 @@
 <template>
 	<NuxtLink :to="`/products/${product.id}`" class="product">
 		<div class="product-img">
-			<p>{{ product.price }}€</p>
+			<p>{{ parseFloat(product.price).toFixed(2) }}€</p>
 			<img :src="product.image" />
 		</div>
 		<div class="product-title">

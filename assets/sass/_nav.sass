@@ -1,9 +1,14 @@
 .nav
 	background: $dark
-	padding: 20px 100px
-	display: flex
-	justify-content: space-between
-	align-items: center
+	padding: 20px 0px
+	position: fixed
+	width: 100%
+	z-index: 2
+
+	.frame
+		display: flex
+		justify-content: space-between
+		align-items: center
 
 .nav-links
 	a
@@ -11,6 +16,39 @@
 		padding: 20px
 		font-weight: bold
 
+		&:hover, &.router-link-active
+			color: $vanilla
+
+.nav-cart
+	background: $vanilla
+	color: $dark !important
+	padding: 10px 20px !important
+	border-radius: 20px
+	transition: all 0.1s ease-in-out
+	margin-left: 30px
+	display: inline-flex
+	align-items: center
+
+	i
+		font-size: 1.4rem
+		margin-right: 10px
+
+	span
+		font-size: 0.9rem
+
+	&:hover
+		background: $green
+		color: $white !important
+
 .nav-logo
 	h4
 		color: white
+		font-style: normal
+		font-weight: normal
+		font-size: 2.1rem
+		color: $vanilla
+		letter-spacing: -1px
+
+	span
+		font-weight: bold
+		color: $white

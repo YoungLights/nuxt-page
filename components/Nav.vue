@@ -1,3 +1,8 @@
+<script setup>
+	import { useCartStore } from '~~/stores/cartStore';
+	const items = useCartStore()
+</script>
+
 <template>
 	<nav class="nav">
 		<div class="frame">
@@ -11,7 +16,7 @@
 				<NuxtLink to="/products">Products</NuxtLink>
 				<NuxtLink to="/cart" class="nav-cart">
 					<i class="fa-solid fa-bag-shopping"></i>
-					<span>0 Items</span>
+					<span>{{ items.amountTotal }} Items</span>
 				</NuxtLink>
 			</div>
 		</div>

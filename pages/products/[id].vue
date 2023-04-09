@@ -19,7 +19,7 @@
 	<div class="product-details-grid">
 		<div class="product-details">
 			<div class="product-img">
-				<p>{{ product.price }}</p>
+				<p>{{ parseFloat(product.price).toFixed(2) }}€</p>
 				<span>{{ product.category }}</span>
 				<img :src="product.image" :alt="product.title">
 			</div>

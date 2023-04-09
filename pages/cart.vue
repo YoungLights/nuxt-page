@@ -8,6 +8,9 @@
 	<h1>Cart</h1>
 	<div class="cart-list" v-if="items.cart.length">
 		<CartItem v-for="item in items.cart" :key="item.id" :item="item" />
+		<div class="cart-list-total">
+			<h4>Total Price: {{ parseFloat(items.cartTotal).toFixed(2) }}€</h4>
+		</div>
 	</div>
 
 	<div v-else>

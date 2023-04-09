@@ -6,7 +6,7 @@
 
 <template>
 	<h1>Cart</h1>
-	<div class="cart-list" v-if="items.length">
+	<div class="cart-list" v-if="items.cart.length">
 		<CartItem v-for="item in items.cart" :key="item.id" :item="item" />
 	</div>
 

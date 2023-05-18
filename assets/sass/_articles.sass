@@ -1,2 +1,21 @@
 .article
 	border: solid 1px $green
+	padding: 20px
+	border-radius: 10px
+	background: $light
+	color: $white
+	box-shadow: 0px 0px 5px $green
+	transition: all 0.2s ease-in-out
+
+	h2
+		color: $green
+		text-shadow: 0px 0px 20px $green
+
+	small
+		color: $grey
+
+	&:hover
+		box-shadow: 0px 0px 20px $green
+
+.article + .article
+	margin-top: 20px

@@ -12,6 +12,7 @@
 			<div class="nav-links">
 				<NuxtLink to="/">Welcome</NuxtLink>
 				<NuxtLink to="/about">About</NuxtLink>
+				<NuxtLink to="/blog">Blog</NuxtLink>
 				<NuxtLink to="/services">Services</NuxtLink>
 				<NuxtLink to="/products">Products</NuxtLink>
 				<NuxtLink to="/cart" class="nav-cart">

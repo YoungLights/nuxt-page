@@ -1,0 +1,28 @@
+.form
+	label
+		font-weight: bold
+		color: $green
+		font-size: 0.9rem
+		margin-bottom: 10px
+		display: block
+
+	input, textarea
+		width: 100%
+		display: flex
+		padding: 20px
+		border-radius: 10px
+		border: solid 1px $midgrey
+		outline: none
+		background: $midgrey
+		transition: all 0.2s ease-in-out
+		color: $white
+
+		&:focus
+			box-shadow: 0px 0px 20px $green
+			border-color: $green
+
+	textarea
+		height: 300px
+
+.form-item + .form-item
+	margin-top: 20px

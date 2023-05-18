@@ -12,9 +12,9 @@
 </script>
 
 <template>
-	<div class="product-details-header">
-		<h1 class="product-details-headline">{{ product.title }}</h1>
-		<NuxtLink class="product-details-back" to="/products"><i class="fa-solid fa-list"></i></NuxtLink>
+	<div class="page-header">
+		<h1>{{ product.title }}</h1>
+		<NuxtLink class="page-header-back" to="/products"><i class="fa-solid fa-list"></i></NuxtLink>
 	</div>
 	<div class="product-details-grid">
 		<div class="product-details">

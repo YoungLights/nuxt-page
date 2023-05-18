@@ -8,9 +8,9 @@
 		<NuxtLink class="btn" to="/blog/create">create article</NuxtLink>
 	</div>
 
-	<div class="article" v-for="article in articles" :key="article.id">
+	<NuxtLink :to="`/blog/${article.id}`" class="article" v-for="article in articles" :key="article.id">
 		<h2>{{ article.title }}</h2>
 		<small>by {{ article.author }}</small>
 		<p>{{ article.text }}</p>
-	</div>
+	</NuxtLink>
 </template>

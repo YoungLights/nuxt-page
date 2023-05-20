@@ -1,0 +1,29 @@
+.modal
+	display: flex
+	justify-content: center
+	align-items: center
+	position: fixed
+	inset: 0
+	background: #080714e3
+	z-index: 200
+	transition: all 0.2s ease-in-out
+	opacity: 0
+	pointer-events: none
+
+	&.active
+		pointer-events: all
+		opacity: 1
+
+		.modal-container
+			transform: scale(1)
+
+.modal-container
+	background: $vanilla
+	padding: 50px
+	border-radius: 20px
+	transition: all 0.2s ease-in-out 0.2s
+	transform: scale(0)
+
+	h4
+		font-size: 1.5rem
+		text-align: center
